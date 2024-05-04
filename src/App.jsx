@@ -28,7 +28,7 @@ function App() {
           <Player name="Player 2" symbol="0" isActive={isActive === "0"} />
         </ol>
         <GameBoard onSelectplayer={handleSelectActivePlayer} turns={gameTurn} />
-        <Log />
+        <Log turns={gameTurn} />
       </div>
     </main>
   );

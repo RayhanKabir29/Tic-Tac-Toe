@@ -11,16 +11,7 @@ const GameBoard = ({ onSelectplayer, turns }) => {
 
     gameBoard[row][col] = player;
   }
-  // const [gameBoard, setGameBoard] = useState(initialGameBoard);
-  // const handleSelectSquare = (rowIndex, colIndex) => {
-  //   setGameBoard((prevGameBoard) => {
-  //     const updatedBoard = [
-  //       ...prevGameBoard.map((innerBoard) => [...innerBoard]),
-  //     ];
-  //     updatedBoard[rowIndex][colIndex] = "X";
-  //     return updatedBoard;
-  //   });
-  // };
+
   return (
     <ol id="game-board">
       {gameBoard?.map((row, rowIndex) => (
